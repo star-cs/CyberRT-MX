@@ -1,4 +1,4 @@
-cmake_minimum_required(3.10)
+cmake_minimum_required(VERSION 3.10)
 project(CyberRT-MX C CXX ASM)
 enable_language(ASM)
 
@@ -18,3 +18,5 @@ link_directories(/usr/local/lib)
 include_directories(/)
 include_directories(cyber)
 include_directories(thirdparty)
+
+file(GLOB_RECURSE SOURCES cyber/*.cpp)
