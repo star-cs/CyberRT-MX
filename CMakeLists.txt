@@ -20,3 +20,9 @@ include_directories(cyber)
 include_directories(thirdparty)
 
 file(GLOB_RECURSE SOURCES cyber/*.cpp)
+
+add_library(cyber_mx ${SOURCES})
+link_libraries(cyber_mx 
+    uuid
+    pthread
+)
