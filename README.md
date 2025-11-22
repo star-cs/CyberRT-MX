@@ -3,6 +3,12 @@
 
 
 # 环境
+```bash
+sudo apt-get update
+sudo apt-get install uuid-dev
+```
+
+
 ```base
 cd thirdparty
 mkdir foonathan_memory_vendor/build

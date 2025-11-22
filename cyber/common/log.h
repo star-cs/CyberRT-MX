@@ -2,6 +2,8 @@
 #define __COMMON_LOG_H__
 
 #include "log/logger.h"
+#include "log/logstream.h"
+
 using namespace cyber::logger;
 
 #define Logger_Init(file_name) Logger::Instance()->open(file_name)
